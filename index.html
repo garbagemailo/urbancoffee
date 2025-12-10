@@ -3,63 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
+    <title>Urban Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
-<body>
-    <header>
-        <img src="assets/img/LOGO.png" alt="Логотип">
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Меню</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="welcome">
-            <h1>Добро пожаловать в наш кофейный магазин</h1>
-            <p>Наш магазин предлагает лучший кофе в городе. Приходите и насладитесь вкусом нашего кофе.</p>
-            <button class="cta-button">Заказать кофе</button>
-        </section>
-        <section class="products">
-            <h2>Наши продукты</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="assets/img/IMAGE (2).png" alt="Кофе 1">
-                    <p>Кофе</p>
-                    <button class="cta-button">Купить</button>
-                </div>
-                <div class="product-item">
-                    <img src="assets/img/IMAGE (3).png" alt="Кофе 2">
-                    <p>Чай</p>
-                    <button class="cta-button">Купить</button>
-                </div>
-                <div class="product-item">
-                    <img src="assets/img/image (1).png" alt="Кофе 3">
-                    <p>Выпечка</p>
-                    <button class="cta-button">Купить</button>
-                </div>
-            </div>
-        </section>
-        <section class="gallery">
-            <h2>Галерея</h2>
-            <div class="gallery-grid">
-                <img src="assets/img/image (6).png" alt="Галерея 1">
-                <img src="assets/img/image (7).png" alt="Галерея 2">
-                <img src="assets/img/image (8).png" alt="Галерея 3">
-                <img src="assets/img/pr-0018-r.png" alt="Галерея 4">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>Контактная информация:</p>
-        <p>Адрес: ул. Пушкина, Колотушкина 1</p>
-        <p>Телефон: 69-69-69</p>
-        <p>Email: xham@coffee.shop</p>
-    </footer>
+
+<body class="page">
+
+<header class="header">
+    <div class="header__logo">
+        <img src="assets/img/logo.png" alt="Urban Coffee logo" class="header__logo-image">
+    </div>
+
+    <nav class="nav header__nav">
+        <a href="#about" class="nav__link">О нас</a>
+        <a href="#products" class="nav__link">Продукция</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+        <a href="#cart" class="nav__link nav__link--icon">
+            <img src="assets/icons/shopping-cart.png" alt="Корзина">
+        </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="assets/img/banner.png" alt="Баннер" class="hero__banner">
+    <div class="hero__content">
+        <h1 class="hero__title">Urban Coffee</h1>
+        <p class="hero__subtitle">Свежий кофе каждый день</p>
+    </div>
+</section>
+
+<section id="about" class="about section">
+    <h2 class="section__title">О нас</h2>
+
+    <div class="about__content">
+        <div class="about__item">
+            <img src="assets/icons/ic_coffee.png" class="about__icon" alt="Кофе">
+            <p class="about__text">Мы поставляем только свежие зерна высокого качества.</p>
+        </div>
+
+        <div class="about__item">
+            <img src="assets/icons/ic_mountain.png" class="about__icon" alt="Горы">
+            <p class="about__text">Наш кофе выращен в экологически чистых регионах.</p>
+        </div>
+
+        <div class="about__item">
+            <img src="assets/icons/ic.png" class="about__icon" alt="Технологии">
+            <p class="about__text">Мы используем современные методы обжарки.</p>
+        </div>
+    </div>
+</section>
+
+<section id="products" class="products section">
+    <h2 class="section__title">Наборы кофе</h2>
+
+    <div class="products__grid">
+        <article class="product-card">
+            <img src="assets/img/package_1.png" class="product-card__image" alt="">
+            <h3 class="product-card__title">Набор №1</h3>
+            <button class="button product-card__button">Купить</button>
+        </article>
+
+        <article class="product-card">
+            <img src="assets/img/package_2.png" class="product-card__image" alt="">
+            <h3 class="product-card__title">Набор №2</h3>
+            <button class="button product-card__button">Купить</button>
+        </article>
+
+        <article class="product-card">
+            <img src="assets/img/package_3.png" class="product-card__image" alt="">
+            <h3 class="product-card__title">Набор №3</h3>
+            <button class="button product-card__button">Купить</button>
+        </article>
+
+        <article class="product-card">
+            <img src="assets/img/package_4.png" class="product-card__image" alt="">
+            <h3 class="product-card__title">Набор №4</h3>
+            <button class="button product-card__button">Купить</button>
+        </article>
+
+        <article class="product-card">
+            <img src="assets/img/package_6.png" class="product-card__image" alt="">
+            <h3 class="product-card__title">Набор №6</h3>
+            <button class="button product-card__button">Купить</button>
+        </article>
+
+        <article class="product-card">
+            <img src="assets/img/package_7.png" class="product-card__image" alt="">
+            <h3 class="product-card__title">Набор №7</h3>
+            <button class="button product-card__button">Купить</button>
+        </article>
+
+        <article class="product-card">
+            <img src="assets/img/package_8.png" class="product-card__image" alt="">
+            <h3 class="product-card__title">Набор №8</h3>
+            <button class="button product-card__button">Купить</button>
+        </article>
+    </div>
+</section>
+
+<section class="extended section">
+    <h2 class="section__title">Расширенный набор</h2>
+
+    <div class="extended__wrapper">
+        <img src="assets/img/package_extended.png" class="extended__image" alt="">
+        <div class="extended__info">
+            <p class="extended__text">Подробный набор премиальных сортов кофе.</p>
+            <button class="button extended__button">Купить</button>
+        </div>
+    </div>
+</section>
+
+<section id="contacts" class="contacts section">
+    <h2 class="section__title">Контакты</h2>
+    <p class="contacts__text">Email: info@urbancoffee.ru</p>
+    <p class="contacts__text">Телефон: +7 999 000 00 00</p>
+</section>
+
+<footer class="footer">
+    <p class="footer__text">© Urban Coffee, 2025</p>
+</footer>
+
 </body>
 </html>
