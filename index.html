@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban Coffee</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 </head>
@@ -19,12 +19,16 @@
     </div>
 
     <nav class="nav header__nav">
-        <a href="#about" class="nav__link">О нас</a>
-        <a href="#products" class="nav__link">Продукция</a>
-        <a href="#contacts" class="nav__link">Контакты</a>
-        <a href="#cart" class="nav__link nav__link--icon">
-            <img src="assets/icons/shopping-cart.png" alt="Корзина">
-        </a>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#products" class="nav__link">Продукция</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+            <li class="nav__item nav__item--icon">
+                <a href="#cart" class="nav__link nav__link--icon">
+                    <img src="assets/icons/shopping-cart.png" alt="Корзина">
+                </a>
+            </li>
+        </ul>
     </nav>
 </header>
 
@@ -36,23 +40,49 @@
     </div>
 </section>
 
+<section class="content-grid section">
+    <h2 class="section__title">Наши направления</h2>
+
+    <div class="content-grid__container">
+        <article class="content-card">
+            <h3 class="content-card__title">Поставка зерна</h3>
+            <p class="content-card__text">Надёжные поставки от лучших фермеров.</p>
+        </article>
+
+        <article class="content-card">
+            <h3 class="content-card__title">Обжарка</h3>
+            <p class="content-card__text">Точное соблюдение технологии обжарки.</p>
+        </article>
+
+        <article class="content-card">
+            <h3 class="content-card__title">Контроль качества</h3>
+            <p class="content-card__text">Многоуровневая проверка каждой партии.</p>
+        </article>
+
+        <article class="content-card">
+            <h3 class="content-card__title">Доставка</h3>
+            <p class="content-card__text">Быстрая доставка по всей стране.</p>
+        </article>
+    </div>
+</section>
+
 <section id="about" class="about section">
     <h2 class="section__title">О нас</h2>
 
     <div class="about__content">
         <div class="about__item">
             <img src="assets/icons/ic_coffee.png" class="about__icon" alt="Кофе">
-            <p class="about__text">Мы поставляем только свежие зерна высокого качества.</p>
+            <p class="about__text">Свежие зерна высокого класса.</p>
         </div>
 
         <div class="about__item">
             <img src="assets/icons/ic_mountain.png" class="about__icon" alt="Горы">
-            <p class="about__text">Наш кофе выращен в экологически чистых регионах.</p>
+            <p class="about__text">Экологически чистые регионы выращивания.</p>
         </div>
 
         <div class="about__item">
             <img src="assets/icons/ic.png" class="about__icon" alt="Технологии">
-            <p class="about__text">Мы используем современные методы обжарки.</p>
+            <p class="about__text">Современные методы обжарки.</p>
         </div>
     </div>
 </section>
@@ -105,15 +135,29 @@
     </div>
 </section>
 
-<section class="extended section">
-    <h2 class="section__title">Расширенный набор</h2>
+<section id="masonry" class="masonry-grid section">
+    <h2 class="section__title">Дополнительные материалы</h2>
 
-    <div class="extended__wrapper">
-        <img src="assets/img/package_extended.png" class="extended__image" alt="">
-        <div class="extended__info">
-            <p class="extended__text">Подробный набор премиальных сортов кофе.</p>
-            <button class="button extended__button">Купить</button>
-        </div>
+    <div class="masonry-grid__container">
+        <article class="masonry-item masonry-item--short">
+            <h3 class="masonry-item__title">Краткий материал</h3>
+            <p class="masonry-item__text">Короткое описание.</p>
+        </article>
+
+        <article class="masonry-item masonry-item--tall">
+            <h3 class="masonry-item__title">Подробный материал</h3>
+            <p class="masonry-item__text">Развёрнутое описание.</p>
+        </article>
+
+        <article class="masonry-item">
+            <h3 class="masonry-item__title">Стандартный материал</h3>
+            <p class="masonry-item__text">Описание средней длины.</p>
+        </article>
+
+        <article class="masonry-item masonry-item--very-tall">
+            <h3 class="masonry-item__title">Обширный материал</h3>
+            <p class="masonry-item__text">Полное описание с характеристиками.</p>
+        </article>
     </div>
 </section>
 
