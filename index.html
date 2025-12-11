@@ -1,175 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Coffee</title>
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Urban Coffee</title> 
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 
 <body class="page">
 
 <header class="header">
-    <div class="header__logo">
-        <img src="assets/img/logo.png" alt="Urban Coffee logo" class="header__logo-image">
-    </div>
+    <div class="container">
+        <div class="header__inner">
 
-    <nav class="nav header__nav">
-        <ul class="nav__list">
-            <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
-            <li class="nav__item"><a href="#products" class="nav__link">Продукция</a></li>
-            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
-            <li class="nav__item nav__item--icon">
-                <a href="#cart" class="nav__link nav__link--icon">
-                    <img src="assets/icons/shopping-cart.png" alt="Корзина">
-                </a>
-            </li>
-        </ul>
-    </nav>
+            <a href="#" class="logo">
+                <img src="assets/img/logo.png" alt="Urban Coffee logo" width="120" height="40">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#products" class="nav__link">Продукция</a></li>
+                    <li class="nav__item"><a href="#masonry" class="nav__link">Материалы</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
 </header>
 
-<section class="hero">
-    <img src="assets/img/banner.png" alt="Баннер" class="hero__banner">
-    <div class="hero__content">
-        <h1 class="hero__title">Urban Coffee</h1>
-        <p class="hero__subtitle">Свежий кофе каждый день</p>
-    </div>
-</section>
+<main class="main">
 
-<section class="content-grid section">
-    <h2 class="section__title">Наши направления</h2>
-
-    <div class="content-grid__container">
-        <article class="content-card">
-            <h3 class="content-card__title">Поставка зерна</h3>
-            <p class="content-card__text">Надёжные поставки от лучших фермеров.</p>
-        </article>
-
-        <article class="content-card">
-            <h3 class="content-card__title">Обжарка</h3>
-            <p class="content-card__text">Точное соблюдение технологии обжарки.</p>
-        </article>
-
-        <article class="content-card">
-            <h3 class="content-card__title">Контроль качества</h3>
-            <p class="content-card__text">Многоуровневая проверка каждой партии.</p>
-        </article>
-
-        <article class="content-card">
-            <h3 class="content-card__title">Доставка</h3>
-            <p class="content-card__text">Быстрая доставка по всей стране.</p>
-        </article>
-    </div>
-</section>
-
-<section id="about" class="about section">
-    <h2 class="section__title">О нас</h2>
-
-    <div class="about__content">
-        <div class="about__item">
-            <img src="assets/icons/ic_coffee.png" class="about__icon" alt="Кофе">
-            <p class="about__text">Свежие зерна высокого класса.</p>
+    <section class="hero">
+        <img src="assets/img/banner.png" alt="Баннер" class="hero__banner">
+        <div class="hero__content">
+            <h1 class="hero__title">Urban Coffee</h1>
+            <p class="hero__subtitle">Свежий кофе каждый день</p>
         </div>
+    </section>
 
-        <div class="about__item">
-            <img src="assets/icons/ic_mountain.png" class="about__icon" alt="Горы">
-            <p class="about__text">Экологически чистые регионы выращивания.</p>
+    <section id="about" class="section">
+        <h2 class="section__title">О нас</h2>
+
+        <div class="about__content">
+            <div class="about__item">
+                <img src="assets/icons/ic_coffee.png" class="about__icon">
+                <p class="about__text">Свежие зерна высокого класса.</p>
+            </div>
+
+            <div class="about__item">
+                <img src="assets/icons/ic_mountain.png" class="about__icon">
+                <p class="about__text">Экологически чистые регионы выращивания.</p>
+            </div>
+
+            <div class="about__item">
+                <img src="assets/icons/ic.png" class="about__icon">
+                <p class="about__text">Современные методы обжарки.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="about__item">
-            <img src="assets/icons/ic.png" class="about__icon" alt="Технологии">
-            <p class="about__text">Современные методы обжарки.</p>
+    <section id="products" class="products section">
+        <h2 class="section__title">Наборы кофе</h2>
+
+        <div class="products__grid">
+            <article class="product-card">
+                <img src="assets/img/package_1.png" class="product-card__image">
+                <h3 class="product-card__title">Набор №1</h3>
+                <button class="button product-card__button">Купить</button>
+            </article>
+
+            <article class="product-card">
+                <img src="assets/img/package_2.png" class="product-card__image">
+                <h3 class="product-card__title">Набор №2</h3>
+                <button class="button product-card__button">Купить</button>
+            </article>
+
+            <article class="product-card">
+                <img src="assets/img/package_3.png" class="product-card__image">
+                <h3 class="product-card__title">Набор №3</h3>
+                <button class="button product-card__button">Купить</button>
+            </article>
+
+            <article class="product-card">
+                <img src="assets/img/package_4.png" class="product-card__image">
+                <h3 class="product-card__title">Набор №4</h3>
+                <button class="button product-card__button">Купить</button>
+            </article>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="products" class="products section">
-    <h2 class="section__title">Наборы кофе</h2>
+    <section id="masonry" class="masonry-grid section">
+        <h2 class="section__title">Материалы</h2>
 
-    <div class="products__grid">
-        <article class="product-card">
-            <img src="assets/img/package_1.png" class="product-card__image" alt="">
-            <h3 class="product-card__title">Набор №1</h3>
-            <button class="button product-card__button">Купить</button>
-        </article>
+        <div class="masonry-grid__container">
+            <article class="masonry-item masonry-item--short">
+                <h3 class="masonry-item__title">Краткий материал</h3>
+                <p class="masonry-item__text">Короткое описание.</p>
+            </article>
 
-        <article class="product-card">
-            <img src="assets/img/package_2.png" class="product-card__image" alt="">
-            <h3 class="product-card__title">Набор №2</h3>
-            <button class="button product-card__button">Купить</button>
-        </article>
+            <article class="masonry-item masonry-item--tall">
+                <h3 class="masonry-item__title">Подробный материал</h3>
+                <p class="masonry-item__text">Развёрнутое описание.</p>
+            </article>
 
-        <article class="product-card">
-            <img src="assets/img/package_3.png" class="product-card__image" alt="">
-            <h3 class="product-card__title">Набор №3</h3>
-            <button class="button product-card__button">Купить</button>
-        </article>
+            <article class="masonry-item">
+                <h3 class="masonry-item__title">Стандартный материал</h3>
+                <p class="masonry-item__text">Описание средней длины.</p>
+            </article>
+        </div>
+    </section>
 
-        <article class="product-card">
-            <img src="assets/img/package_4.png" class="product-card__image" alt="">
-            <h3 class="product-card__title">Набор №4</h3>
-            <button class="button product-card__button">Купить</button>
-        </article>
+    <section id="contacts" class="contacts section">
+        <h2 class="section__title">Контакты</h2>
+        <p class="contacts__text">Email: info@urbancoffee.ru</p>
+        <p class="contacts__text">Телефон: +7 999 000 00 00</p>
+    </section>
 
-        <article class="product-card">
-            <img src="assets/img/package_6.png" class="product-card__image" alt="">
-            <h3 class="product-card__title">Набор №6</h3>
-            <button class="button product-card__button">Купить</button>
-        </article>
-
-        <article class="product-card">
-            <img src="assets/img/package_7.png" class="product-card__image" alt="">
-            <h3 class="product-card__title">Набор №7</h3>
-            <button class="button product-card__button">Купить</button>
-        </article>
-
-        <article class="product-card">
-            <img src="assets/img/package_8.png" class="product-card__image" alt="">
-            <h3 class="product-card__title">Набор №8</h3>
-            <button class="button product-card__button">Купить</button>
-        </article>
-    </div>
-</section>
-
-<section id="masonry" class="masonry-grid section">
-    <h2 class="section__title">Дополнительные материалы</h2>
-
-    <div class="masonry-grid__container">
-        <article class="masonry-item masonry-item--short">
-            <h3 class="masonry-item__title">Краткий материал</h3>
-            <p class="masonry-item__text">Короткое описание.</p>
-        </article>
-
-        <article class="masonry-item masonry-item--tall">
-            <h3 class="masonry-item__title">Подробный материал</h3>
-            <p class="masonry-item__text">Развёрнутое описание.</p>
-        </article>
-
-        <article class="masonry-item">
-            <h3 class="masonry-item__title">Стандартный материал</h3>
-            <p class="masonry-item__text">Описание средней длины.</p>
-        </article>
-
-        <article class="masonry-item masonry-item--very-tall">
-            <h3 class="masonry-item__title">Обширный материал</h3>
-            <p class="masonry-item__text">Полное описание с характеристиками.</p>
-        </article>
-    </div>
-</section>
-
-<section id="contacts" class="contacts section">
-    <h2 class="section__title">Контакты</h2>
-    <p class="contacts__text">Email: info@urbancoffee.ru</p>
-    <p class="contacts__text">Телефон: +7 999 000 00 00</p>
-</section>
+</main>
 
 <footer class="footer">
     <p class="footer__text">© Urban Coffee, 2025</p>
 </footer>
 
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+<script src="scripts/menu.js"></script>
 </body>
 </html>
