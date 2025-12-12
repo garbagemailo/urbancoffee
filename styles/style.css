@@ -228,8 +228,7 @@ body {
 }
 
 .masonry-grid__container {
-    column-count: 3;
-    column-gap: 24px;
+    column-count: 1;
 }
 
 .masonry-item {
